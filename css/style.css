@@ -23,6 +23,9 @@
 	--c-r: rgb(215, 24, 19);
 	--bg-c: rgb(210, 210, 210);
 }
+html {
+	scroll-behavior: smooth;
+}
 .page {
 	font-family: OpenSans;
 	font-size: 1rem;
