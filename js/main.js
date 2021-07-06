@@ -17,3 +17,25 @@
         $('.burger__item:nth-child(2)').toggleClass('burger__item-middle')
         $('.burger__item:last-child').toggleClass('burger__item-bottom');
     });
+    $('.gallery').slick({
+        slidesToShow: 3,
+        infinite: true,
+        responsive: [{
+            breakpoint: 850,
+            settings: {
+               centerMode: true,
+               slidesToShow: 1,
+               centerPadding: '100px',
+               dots: true
+            }
+        },
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 1,
+                infinite: false,
+                dots: true,
+                arrows: false
+            }
+        }]
+    });
